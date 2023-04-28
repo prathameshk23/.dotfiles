@@ -23,7 +23,7 @@ bind \ch cheat
 
 
 
-colorscript random
+fortune | cowsay | lolcat
 set --export PATH $HOME/.cargo/bin $PATH
 
 starship init fish | source
