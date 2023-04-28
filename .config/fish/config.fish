@@ -21,7 +21,7 @@ end
 bind \cf fzf_tmux
 bind \ch cheat
 
-
+set -g fish_greeting
 
 colorscript random
 set --export PATH $HOME/.cargo/bin $PATH
