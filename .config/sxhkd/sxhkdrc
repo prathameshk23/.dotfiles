@@ -173,5 +173,7 @@ super + alt + s
 super + shift + s 
   flameshot gui
 
-
+#lockscreen
+super + x
+  betterlockscreen -l dimblur
 
