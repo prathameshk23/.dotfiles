@@ -11,11 +11,14 @@ $python\
 $character"""
 
 [directory]
-style = "blue"
+read_only = " "
+truncation_length = 10
+truncate_to_repo = true # truncates directory to root folder if in github repo
+style = "bold italic blue"
 
 [character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
+success_symbol = "[❯](bold green)"
+error_symbol = "[✗]( bold red)"
 vimcmd_symbol = "[❮](green)"
 
 [git_branch]
