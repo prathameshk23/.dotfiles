@@ -1,9 +1,12 @@
+---@diagnostic disable: undefined-global
 require("luasnip.loaders.from_vscode").lazy_load()
 require("luasnip").filetype_extend("typescript", { "javascript" })
 local lsp = require('lsp-zero')
 local lspconfig = require('lspconfig')
 
 lsp.preset("recommended")
+
+lsp.nvim_workspace()
 
 lsp.ensure_installed({
   'tsserver',
@@ -93,3 +96,7 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
+vim.diagnostic.config({
+  virtual_text = true
+})

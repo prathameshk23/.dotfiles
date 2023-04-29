@@ -4,6 +4,7 @@ if status is-interactive
   alias ta='tmux a'
   alias tk='tmux kill-server'
   alias lg='lazygit'
+  alias gt='cd temp'
   alias s='startx'
     # Commands to run in interactive sessions can go here
 end

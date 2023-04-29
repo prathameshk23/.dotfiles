@@ -177,3 +177,4 @@ super + shift + s
 super + x
   betterlockscreen -l dimblur
 
+#open dashboard
