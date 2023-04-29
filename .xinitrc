@@ -41,7 +41,6 @@ fi
 
 xsetroot -cursor_name left_ptr &
 nitrogen --set-scaled --random &
-picom &
 firefox &
 flameshot &
 conky --config=.config/conky/mocha.conf &

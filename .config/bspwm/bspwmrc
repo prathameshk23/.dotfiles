@@ -4,6 +4,7 @@
 $HOME/.config/polybar/launch.sh
 
 pgrep -x sxhkd > /dev/null || sxhkd &
+picom -b &
 
 bspc monitor -d 1 2 3 4 5 6
 
