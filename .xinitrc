@@ -41,7 +41,7 @@ fi
 
 xsetroot -cursor_name left_ptr &
 nitrogen --set-scaled --random &
-firefox &
+chromium &
 flameshot &
 conky --config=.config/conky/mocha.conf &
 exec bspwm

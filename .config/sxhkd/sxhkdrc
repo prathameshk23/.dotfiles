@@ -17,7 +17,7 @@ super + Print
 #shortcuts
 
 super + b
-  firefox
+  chromium
 
 #
 # wm independent hotkeys
@@ -177,4 +177,6 @@ super + shift + s
 super + x
   betterlockscreen -l dimblur
 
-#open dashboard
+#open files
+super + e
+  thunar
