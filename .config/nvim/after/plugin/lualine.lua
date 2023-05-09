@@ -23,10 +23,10 @@ local diagnostics = {
 		"hint",
 	},
 	symbols = {
-		error = " ",
+		error = " ",
 		warn = " ",
-		hint = " ",
-		info = " ",
+		hint = " ",
+		info = " ",
 	},
 	colored = true,
 	always_visible = false,
@@ -193,7 +193,7 @@ lualine.setup({
 			},
 			{
 				function()
-					return "﬌"
+					return "󰒋"
 				end,
 				separator = { left = "", right = "" },
 				color = { bg = "#8FBCBB", fg = "#000000" },

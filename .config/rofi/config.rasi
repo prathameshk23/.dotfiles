@@ -1,4 +1,5 @@
 configuration {
+  font: "ComicShannsMono Nerd Font 12";
   show-icons: true;
   display-drun: "Applications:";
   drun-display-format: "{icon} {name}";
