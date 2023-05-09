@@ -60,3 +60,7 @@ vim.keymap.set("n", "<Leader>fp", ":Prettier<CR>")
 vim.api.nvim_set_keymap("n", "<leader>r", ":vsp | term cargo run<CR>", {})
 vim.api.nvim_set_keymap("n", "<leader>b", ":vsp | term cargo build<CR>", {})
 vim.api.nvim_set_keymap("n", "<leader>t", ":vsp | term cargo test<CR>", {})
+--Trouble
+vim.keymap.set("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>",
+  { silent = true, noremap = true }
+)

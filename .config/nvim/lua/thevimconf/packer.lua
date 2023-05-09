@@ -32,20 +32,20 @@ return require('packer').startup(function(use)
     branch = 'v1.x',
     requires = {
       -- LSP Support
-      { 'neovim/nvim-lspconfig' },         -- Required
-      { 'williamboman/mason.nvim' },       -- Optional
+      { 'neovim/nvim-lspconfig' },             -- Required
+      { 'williamboman/mason.nvim' },           -- Optional
       { 'williamboman/mason-lspconfig.nvim' }, -- Optional
 
       -- Autocompletion
-      { 'hrsh7th/nvim-cmp' },     -- Required
-      { 'hrsh7th/cmp-nvim-lsp' }, -- Required
-      { 'hrsh7th/cmp-buffer' },   -- Optional
-      { 'hrsh7th/cmp-path' },     -- Optional
+      { 'hrsh7th/nvim-cmp' },         -- Required
+      { 'hrsh7th/cmp-nvim-lsp' },     -- Required
+      { 'hrsh7th/cmp-buffer' },       -- Optional
+      { 'hrsh7th/cmp-path' },         -- Optional
       { 'saadparwaiz1/cmp_luasnip' }, -- Optional
-      { 'hrsh7th/cmp-nvim-lua' }, -- Optional
+      { 'hrsh7th/cmp-nvim-lua' },     -- Optional
 
       -- Snippets
-      { 'L3MON4D3/LuaSnip' },         -- Required
+      { 'L3MON4D3/LuaSnip' },             -- Required
       { 'rafamadriz/friendly-snippets' }, -- Optional
     }
   }
@@ -53,12 +53,8 @@ return require('packer').startup(function(use)
   use('nvim-tree/nvim-web-devicons')
   use "akinsho/flutter-tools.nvim"
   use "mrjones2014/nvim-ts-rainbow"
-
   use('ThePrimeagen/harpoon')
-
-
   use('nvim-lua/plenary.nvim')
-
   use "nvim-lualine/lualine.nvim"
   use "lukas-reineke/indent-blankline.nvim"
   use "folke/zen-mode.nvim"
@@ -68,8 +64,8 @@ return require('packer').startup(function(use)
   use "tpope/vim-commentary"
   use {
     'goolord/alpha-nvim',
-    config = function ()
-      require'alpha'.setup(require'alpha.themes.dashboard'.config)
+    config = function()
+      require 'alpha'.setup(require 'alpha.themes.dashboard'.config)
     end
   }
   use "windwp/nvim-ts-autotag"
@@ -78,6 +74,15 @@ return require('packer').startup(function(use)
   use 'andweeb/presence.nvim'
   use("eandrju/cellular-automaton.nvim")
 
-
-
-  end)
+  use {
+    "folke/trouble.nvim",
+    requires = "nvim-tree/nvim-web-devicons",
+    config = function()
+      require("trouble").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
+end)
