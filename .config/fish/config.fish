@@ -6,6 +6,8 @@ if status is-interactive
   alias lg='lazygit'
   alias gt='cd temp'
   alias s='startx'
+  alias ls='exa'
+  alias la='exa --long'
     # Commands to run in interactive sessions can go here
 end
 

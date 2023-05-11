@@ -10,6 +10,7 @@ sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
 export XDG_SESSION_TYPE=x11
+export XDG_CURRENT_DESKTOP=KDE
 
 # merge in defaults and keymaps
 

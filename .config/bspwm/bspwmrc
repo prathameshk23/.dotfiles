@@ -4,6 +4,7 @@
 $HOME/.config/polybar/launch.sh
 
 pgrep -x sxhkd > /dev/null || sxhkd &
+flatpak run md.obsidian.Obsidian &
 picom -b &
 
 bspc monitor -d 1 2 3 4 5 6
@@ -17,7 +18,9 @@ bspc config gapless_monocle         true
 # bspc config single_monocle          true
 
 # Application specific rules
-bspc rule -a chromium desktop="^1"
+bspc rule -a chromium desktop="^2"
+bspc rule -a Thunar desktop="^5"
+bspc rule -a obsidian desktop="^6"
 bspc rule -a Pavucontrol state=floating rectangle=473x288+1431+54 focus=off follow=off sticky=on
 bspc rule -a Gsimplecal state=floating rectangle=250x188+1654+52 focus=off follow=off sticky=on
 
