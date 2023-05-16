@@ -24,6 +24,9 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
+--for lazy git
+vim.keymap.set("n", "<leader>g", "<cmd>lua _LAZYGIT_TOGGLE()<CR>, {noremap = true, silent = true}")
+
 -- This is going to get me cancelled
 vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
@@ -44,7 +47,7 @@ vim.keymap.set("n", "<leader><leader>", function()
   vim.cmd("so")
 end)
 
-vim.keymap.set("n", "<leader>pv", ":NvimTreeFindFileToggle<CR>")
+vim.keymap.set("n", "<leader>pv", "<cmd>NvimTreeFindFileToggle<CR>")
 
 -- Runing python code
 vim.keymap.set("n", "<leader>rx", ":vsp | term python %<CR>")
