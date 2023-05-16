@@ -4,7 +4,7 @@ if status is-interactive
   alias ta='tmux a'
   alias tk='tmux kill-server'
   alias lg='lazygit'
-  alias gt='cd temp'
+  alias gt='cd ~/temp/'
   alias s='startx'
   alias ls='exa'
   alias la='exa --long'
