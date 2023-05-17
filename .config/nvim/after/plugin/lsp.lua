@@ -1,5 +1,4 @@
 ---@diagnostic disable: undefined-global
-require("luasnip.loaders.from_vscode").lazy_load()
 require("luasnip").filetype_extend("typescript", { "javascript" })
 local lsp = require('lsp-zero')
 local lspconfig = require('lspconfig')
@@ -7,6 +6,8 @@ local lspconfig = require('lspconfig')
 lsp.preset("recommended")
 
 lsp.nvim_workspace()
+
+require("luasnip.loaders.from_vscode").lazy_load({ paths = { "./lua/snippets" } })
 
 lsp.ensure_installed({
   'tsserver',

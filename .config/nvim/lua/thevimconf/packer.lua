@@ -27,8 +27,9 @@ return require('packer').startup(function(use)
   use('tpope/vim-fugitive')
   use 'nvim-tree/nvim-tree.lua'
   use 'github/copilot.vim'
-  use {'akinsho/toggleterm.nvim', tag = "*" }
+  use { 'akinsho/toggleterm.nvim', tag = "*" }
   use 'windwp/nvim-autopairs'
+  use 'RRethy/vim-illuminate'
 
   use {
     'VonHeikemen/lsp-zero.nvim',
@@ -52,6 +53,20 @@ return require('packer').startup(function(use)
       { 'rafamadriz/friendly-snippets' }, -- Optional
     }
   }
+
+  use({
+    "utilyre/barbecue.nvim",
+    tag = "*",
+    requires = {
+      "SmiteshP/nvim-navic",
+      "nvim-tree/nvim-web-devicons", -- optional dependency
+    },
+    config = function()
+      require("barbecue").setup()
+    end,
+  })
+
+
 
   use('nvim-tree/nvim-web-devicons')
   use "akinsho/flutter-tools.nvim"
