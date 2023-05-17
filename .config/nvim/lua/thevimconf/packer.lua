@@ -28,6 +28,7 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-tree.lua'
   use 'github/copilot.vim'
   use {'akinsho/toggleterm.nvim', tag = "*" }
+  use 'windwp/nvim-autopairs'
 
   use {
     'VonHeikemen/lsp-zero.nvim',
