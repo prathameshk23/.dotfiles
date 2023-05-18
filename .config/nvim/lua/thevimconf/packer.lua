@@ -13,7 +13,6 @@ return require('packer').startup(function(use)
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
-  use { "catppuccin/nvim", as = "catppuccin" }
 
   use { 'alvarosevilla95/luatab.nvim', requires = 'kyazdani42/nvim-web-devicons' }
 
@@ -24,6 +23,7 @@ return require('packer').startup(function(use)
   use('neovim/nvim-lspconfig')
 
   use('mbbill/undotree')
+  use('ThePrimeagen/vim-be-good')
   use('tpope/vim-fugitive')
   use 'nvim-tree/nvim-tree.lua'
   use 'github/copilot.vim'
@@ -66,8 +66,10 @@ return require('packer').startup(function(use)
     end,
   })
 
-
-
+  use "rebelot/kanagawa.nvim"
+  use { "bluz71/vim-moonfly-colors", as = "moonfly" }
+  use { "catppuccin/nvim", as = "catppuccin" }
+  use 'folke/tokyonight.nvim'
   use('nvim-tree/nvim-web-devicons')
   use "akinsho/flutter-tools.nvim"
   use "mrjones2014/nvim-ts-rainbow"

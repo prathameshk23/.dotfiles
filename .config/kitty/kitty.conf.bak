@@ -23,7 +23,7 @@ allow_remote_control    true
 disable_ligatures       always
 
 # BEGIN_KITTY_THEME
-# Tokyo Night
-include current-theme.conf
+# Catppuccin-Mocha
+include current_theme.conf
 # END_KITTY_THEME
 
