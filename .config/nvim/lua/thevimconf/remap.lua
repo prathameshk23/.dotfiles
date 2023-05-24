@@ -27,6 +27,10 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 --for lazy git
 vim.keymap.set("n", "<leader>g", "<cmd>lua _LAZYGIT_TOGGLE()<CR>, {noremap = true, silent = true}")
 
+-- for git worktrees
+vim.keymap.set("n", "<leader>gw", "<cmd>lua _TOGGLE_GITWORKTREE()<CR>")
+vim.keymap.set("n", "<leader>cw", "<cmd>lua _CREATE_GITWORKTREE()<CR>")
+
 -- This is going to get me cancelled
 vim.keymap.set("i", "<C-c>", "<Esc>")
 -- vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")

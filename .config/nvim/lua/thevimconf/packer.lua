@@ -27,6 +27,7 @@ return require('packer').startup(function(use)
   use('tpope/vim-fugitive')
   use 'nvim-tree/nvim-tree.lua'
   use 'github/copilot.vim'
+  use 'ThePrimeagen/git-worktree.nvim'
   use { 'akinsho/toggleterm.nvim', tag = "*" }
   use 'windwp/nvim-autopairs'
   use 'RRethy/vim-illuminate'

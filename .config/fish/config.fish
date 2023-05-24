@@ -37,6 +37,7 @@
 
 
 if status is-interactive
+  alias vs='nvim ~/.dotfiles/.config/nvim/'
   alias v='nvim'
   alias tl='tmux list-sessions'
   alias ta='tmux a'
