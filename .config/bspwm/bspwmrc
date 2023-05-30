@@ -6,7 +6,17 @@ $HOME/.config/polybar/launch.sh
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom -b &
 
-bspc monitor -d 1 2 3 4 5 6
+
+if [[ $(xrandr -q | grep "HDMI-1 connected") ]]; then
+  xrandr --output eDP-1 --primary --mode 1920x1080 --rotate normal --output HDMI-1 --mode 1920x1080 --rate 75.00 --rotate normal --left-of eDP-1
+  bspc monitor eDP-1 -d 1 2 3 4 
+  bspc monitor HDMI-1 -d 5 6 7 8
+  nitrogen --head=1 --set-scaled ~/Wallpapers/wallhaven-5g5p23_1920x1080.png &
+else
+  bspc monitor -d 1 2 3 4 5 6
+fi
+
+nitrogen --head=0 --set-scaled ~/Wallpapers/wallhaven-5g5p23_1920x1080.png &
 
 bspc config border_width            2
 bspc config window_gap              16
