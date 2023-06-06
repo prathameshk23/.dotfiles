@@ -47,6 +47,7 @@ if status is-interactive
   alias s='startx'
   alias ls='exa'
   alias la='exa --long'
+  alias gl='git log --oneline --graph --decorate --all'
     # Commands to run in interactive sessions can go here
 end
 
