@@ -83,6 +83,8 @@ return require('packer').startup(function(use)
   use "lewis6991/gitsigns.nvim"
   use "preservim/tagbar"
   use "tpope/vim-commentary"
+  use "mfussenegger/nvim-dap"
+  use "rcarriga/nvim-dap-python"
   use {
     'goolord/alpha-nvim',
     config = function()

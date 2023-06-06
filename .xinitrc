@@ -42,7 +42,7 @@ fi
 xsetroot -cursor_name left_ptr &
 nitrogen --head=0 --set-scaled ~/Wallpapers/wallhaven-5g5p23_1920x1080.png &
 chromium &
-flameshot &
+# flameshot &
 conky --config=.config/conky/mocha.conf &
 dbus-launch --exit-with-session bspwm
 
