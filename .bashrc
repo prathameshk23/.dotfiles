@@ -10,3 +10,6 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 eval "$(starship init bash)"
 . "$HOME/.cargo/env"
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"

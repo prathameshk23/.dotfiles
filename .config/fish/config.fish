@@ -48,6 +48,7 @@ if status is-interactive
   alias ls='exa'
   alias la='exa --long'
   alias gl='git log --oneline --graph --decorate --all'
+  alias lvim='NVIM_APPNAME=LazyVim nvim'
     # Commands to run in interactive sessions can go here
 end
 
@@ -73,3 +74,8 @@ starship init fish | source
 
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /home/pratham/.ghcup/bin $PATH # ghcup-env
 fish_add_path /home/pratham/.spicetify
+
+set -Ux PYENV_ROOT $HOME/.pyenv
+set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
+
+pyenv init - | source
