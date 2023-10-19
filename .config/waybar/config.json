@@ -6,7 +6,8 @@
     "cpu",
     "memory",
     "custom/spotify",
-    "battery"
+    "battery",
+    "wlr/taskbar"
   ],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
@@ -141,5 +142,12 @@
     "format": "",
     "on-click": "~/.config/rofi/scripts/wallpaper",
     "on-click-right": "~/.config/waybar/scripts/wallpaper.sh"
+  },
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 18,
+    "tooltip-format": "{name}",
+    "on-click": "activate",
+    "on-click-middle": "close"
   }
 }
